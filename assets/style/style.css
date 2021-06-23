@@ -68,6 +68,7 @@ list-style:none;
     min-height: 100px;
     padding: 20px 0;
     display: block!important;
+    border-right: 3px solid #eee;
 }
 ul li a{
     color:#000;
