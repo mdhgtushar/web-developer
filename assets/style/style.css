@@ -111,6 +111,13 @@ ul li a{
     background: #eee;
     display: none;
 }
+
+    .dis-none{
+        display: block!important;
+    }
+    .dis-block{
+        display: none!important;
+    }
 @media only screen and (max-width: 600px) {
     .menu{
         display: block;
