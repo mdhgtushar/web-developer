@@ -19,8 +19,9 @@
             </ul>
         </header>
         <hr>
+            <div class="menu" onclick="menuTog()"><h4>Menu</h4></div>
         <section class="main-content">
-        <aside class="main-aside">
+        <aside class="main-aside" id="aside" style="display: none;">
 
             <ul class="mainUl">
                 <li class="mainLi">Html Basic</li>
@@ -40,7 +41,7 @@
                 </ul>
             </ul>
         </aside>
-        <section class="content">
+        <section class="content" id="content">
             <div class="content-header-box">
                 <h3>Html Basic > Introduction</h3>
                 <div>
@@ -54,5 +55,21 @@
 
         </section>
     </section>
+    <script>
+        function menuTog(){
+            const aside = document.getElementById('aside');
+            const content = document.getElementById('content');
+            var display = aside.style.display;
+            if(display == 'block'){
+                aside.setAttribute('class', 'main-aside');
+                 aside.style.display = 'none';
+                content.style.display = 'block';
+            }else if(display == 'none'){
+                aside.setAttribute('class', 'main-asidee');
+                 aside.style.display = 'block';
+                content.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

@@ -67,6 +67,7 @@ list-style:none;
     width: 350px;
     min-height: 100px;
     padding: 20px 0;
+    display: block!important;
 }
 ul li a{
     color:#000;
@@ -103,4 +104,40 @@ ul li a{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+}
+
+.menu{
+    padding: 10px;
+    background: #eee;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .menu{
+        display: block;
+    }
+    .dis-none{
+        display: none!important;
+    }
+    .dis-block{
+        display: block!important;
+    }
+.main-header{
+    display: block;
+    height: auto;
+}
+.headerUl{
+    padding: 0;
+    margin: 10px 0;
+}
+.headerUl li a{
+    background: #eee;
+    padding: 5px;
+}
+.main-aside{
+    width: 100%;
+    display: none!important;
+}
+.main-asidee{
+    width: 100%;
+}
 }
